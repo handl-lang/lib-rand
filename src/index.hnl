@@ -76,7 +76,7 @@ export SeededString: (Number, Number, String) ~> String
 --- Generate a seeded normally distributed number with `mean` and `stddev`.
 export SeededGauss: (Number, Number, Number) ~> Number
 
-from "../grade" import { Grade }
+from "grade" import { Grade }
 --- @template Random
 --- Grade for effectful randomness generation.
 --- @details
