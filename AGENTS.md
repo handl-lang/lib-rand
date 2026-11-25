@@ -1,3 +1,32 @@
+# lib-rand
+
+Random **port types** for the Handl platform — the contract side of
+the port/impl split. Backends `rand-c` (C entropy) and `rand-js`
+implement the same interface.
+
+## Layout
+
+| path | role |
+| --- | --- |
+| `src/index.hnl` | the contract |
+| `pkg.hnl` | manifest — dep `type`, `modules: ["rand"]` |
+| `scripts/hnl-gate.sh`, `ci.sh` | the gate / bupha entry |
+
+## Contract
+
+- Port types for randomness; see `src/index.hnl` for the signature
+  surface (unseeded + `seeded_*` families).
+
+## Verification
+
+```bash
+HNL=../host-cli/target/debug/hnl scripts/hnl-gate.sh
+```
+
+## License
+
+MIT.
+
 <!-- myco:agent-awareness -->
 
 ## Agent awareness
