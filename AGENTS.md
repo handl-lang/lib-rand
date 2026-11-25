@@ -10,7 +10,7 @@ implement the same interface.
 | --- | --- |
 | `src/index.hnl` | the contract |
 | `pkg.hnl` | manifest — dep `type`, `modules: ["rand"]` |
-| `scripts/hnl-gate.sh`, `ci.sh` | the gate / bupha entry |
+| `scripts/hnl-gate.sh`, `workflows/gate.yaml` | the gate / bupha entry |
 
 ## Contract
 
